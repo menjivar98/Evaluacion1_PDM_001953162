@@ -121,15 +121,15 @@ public class JSON {
     public String ImprimirJSON (){
         return "{ Nombre: " + getNombre() + "\n" +
                 "Correo: " + getEmail() + "\n" +
-                "Producto1: " + getProducto1() + "\n" +
-                "Producto2: " + getProducto2() +"\n" +
-                "Producto3: " + getProducto3() + "\n" +
-                "Producto4: " + getProducto4() + "\n" +
-                "Producto5: " + getProducto5() + "\n" +
-                "Producto6: " + getProducto6() + "\n" +
-                "Producto7: " + getProducto7() + "\n" +
-                "Producto8: " + getProducto8() + "\n" +
-                "Producto9: " + getProducto9() + "}" ;
+                " " + getProducto1() + "\n" +
+                " " + getProducto2() +"\n" +
+                " " + getProducto3() + "\n" +
+                " " + getProducto4() + "\n" +
+                " " + getProducto5() + "\n" +
+                " " + getProducto6() + "\n" +
+                " " + getProducto7() + "\n" +
+                " " + getProducto8() + "\n" +
+                " " + getProducto9() + "}" ;
       }
 }
 

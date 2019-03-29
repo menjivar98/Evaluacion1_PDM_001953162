@@ -13,6 +13,9 @@ public class Main2Activity extends AppCompatActivity {
     EditText nombre,correo,total;
     String sNombre,sCorreo,sTotal,s1,s2,s3,s4,s5,s6,s7,s8,s9;
     Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
+    Button b10;
+    JSON J;
+    String datos_compartir;
 
 
     @Override
@@ -32,6 +35,7 @@ public class Main2Activity extends AppCompatActivity {
         b7 = findViewById(R.id.btn_7);
         b8 = findViewById(R.id.btn_8);
         b9 = findViewById(R.id.btn_9);
+        b10 = findViewById(R.id.compartir);
 
         Intent new_intent = getIntent();
 
@@ -62,6 +66,20 @@ public class Main2Activity extends AppCompatActivity {
         b7.setText(s7);
         b8.setText(s8);
         b9.setText(s9);
+
+        b10.setOnClickListener(v ->{
+            Intent m_intent2 = new Intent();
+            J = new JSON(nombre.getText().toString(),correo.getText().toString(),b1.getText().toString(),b2.getText().toString(),b3.getText().toString(),b4.getText().toString(),b5.getText().toString(),b6.getText().toString(),b7.getText().toString(),b8.getText().toString(),b9.getText().toString());
+
+            datos_compartir = J.ImprimirJSON();
+
+            m_intent2.setAction(Intent.ACTION_SEND);
+            m_intent2.setType("text/plain");
+
+            m_intent2.putExtra(Intent.EXTRA_TEXT,datos_compartir);
+
+            startActivity(m_intent2);
+        });
 
     }
 }

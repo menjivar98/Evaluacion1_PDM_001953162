@@ -10,8 +10,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Factura"
-        android:layout_gravity="center"/>
+        android:text="@string/tv_factura"
+        android:layout_gravity="center"
+        android:textSize="25sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +22,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre: "/>
+            android:text="@string/tv_nombre1"/>
         <EditText
             android:id="@+id/et_respuesta_nombre"
             android:layout_width="match_parent"
@@ -35,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Correo: "/>
+            android:text="@string/et_correo1"/>
         <EditText
             android:id="@+id/et_correo"
             android:layout_width="match_parent"
@@ -49,7 +50,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total de Producto: "/>
+            android:text="@string/tv_totaldeproducto"/>
         <EditText
             android:id="@+id/et_respuesta_total"
             android:layout_width="wrap_content"

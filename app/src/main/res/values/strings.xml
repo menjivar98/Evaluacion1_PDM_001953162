@@ -4,4 +4,8 @@
     <string name="hint_usuario">Ingrese aqui el usuario</string>
     <string name="tv_correo">Correo:</string>
     <string name="hint_correo">Ingrese el correo aqui</string>
+    <string name="tv_factura">Factura</string>
+    <string name="tv_nombre1">Nombre:</string>
+    <string name="et_correo1">Correo:</string>
+    <string name="tv_totaldeproducto">Total de Producto:</string>
 </resources>
