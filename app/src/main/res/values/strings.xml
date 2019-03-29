@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Evaluacion1_PDM_00195316</string>
+    <string name="tv_nombre">Usuario</string>
+    <string name="hint_usuario">Ingrese aqui el usuario</string>
+    <string name="tv_correo">Correo:</string>
+    <string name="hint_correo">Ingrese el correo aqui</string>
 </resources>
